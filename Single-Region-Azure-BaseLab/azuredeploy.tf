@@ -1,12 +1,3 @@
-#backend
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "azlab"
-    storage_account_name = "azlabmystorage"
-    container_name       = "terraform-state"
-    key                  = "e0b62197-bc9d-483e-9895-04d642d5f246"
-  }
-}
 
 #Resource Groups
 resource "azurerm_resource_group" "rg1" {
